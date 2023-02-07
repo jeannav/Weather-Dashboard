@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="header"> Weather Dashboard </h1>
+    </div>
+
+    <div class="row">
+        <!-- Column 1: containing the city search section -->
+        <div class="col-3 search-bar">
+            <h2>Search for a City:</h2>
+            <form id="search-form">
+                <input class="city-name" id="city-input" name="city-input" placeholder="Enter City name" />
+                <button id="searchBtn">Search</button>
+            </form>
+        </div>
+        <!-- list of search history -->
+        <div id="card">
+            <ul id="city-list" class="list-group "> </ul>
+        </div>
+    </div>
+
+    <!-- Column 2: containing the current weather for the recent city searched -->
+    <div class="col-8">
+        <!-- Column 2/Row 1 -->
+        <div class="row-12 card">
+            <div id="current-weather" class="card-body"> </div>
+        </div>
+        <!-- Column 2/Row 2 -->
+        <div class="row-12">
+            <h3> 5-Day Forcast: </h3>
+        </div>
+        <!--Column 2/Row 3 -->
+        <div class="row" id="boxes"> </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
